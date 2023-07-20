@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+}
+/* header styling */
+
+header{
+  background-color: #26877F;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.header-logo {
+  display: block;
+  width: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation styling */
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 7rem;
+  color:#176B87;
+  font-family: 'Agdasima', sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color:gray;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+}
+
+nav li {
+  margin: 0 1rem;;
+}
+
+.mobile-menu-button {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #176B87;
+  font-family: 'Agdasima', sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+}
+}
+
+@media screen and (min-width: 900px) {
+  .mobile-menu-button {
+      display: none;
+  }
+}
+
+/* Main styling */
+.promotional-banner {
+  width: 100%;
+}
+
+section {
+  display:flex;
+}
+
+article {
+  flex: 1;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Agdasima', sans-serif;
+  margin-bottom: 7rem;
+}
+
+article h2 {
+text-align: center;
+}
+
+.article_image {
+width: 100%;
+}
+
+.read_more {
+  background-color: #26877F; 
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  font-family: 'Agdasima', sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.read_more:hover {
+  box-shadow: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #d1f0ee;
+}
+
+footer div {
+  margin: 1rem;
+}
+
+.footer-logo {
+  width: 1.5rem;
+  display: block;
+}
+
+footer p {
+  font-family: 'Agdasima', sans-serif;
+  font-size: small;
+  margin: 0;
+}
